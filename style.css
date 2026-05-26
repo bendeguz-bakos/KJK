@@ -1,15 +1,6 @@
-/* Layout only — no colors, no fonts */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    min-height: 100vh;
-    padding: 0;
-}
+body { min-height: 100vh; }
 
 .page-wrap {
     max-width: 700px;
@@ -20,20 +11,13 @@ body {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 12px;
     padding-bottom: 16px;
     margin-bottom: 28px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    border-bottom: 1px solid;
 }
 
-.header-title {
-    flex: 1;
-    text-align: center;
-}
-
-.section-badge {
+.badge {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -43,22 +27,19 @@ body {
     flex-shrink: 0;
     font-size: 1.2em;
     font-weight: bold;
+    border: 1px solid;
 }
 
-.content {
-    line-height: 1.8;
-    text-align: justify;
-}
+.header-title { flex: 1; text-align: center; }
 
-.content p {
-    margin-bottom: 1em;
-}
+.content { line-height: 1.8; text-align: justify; }
+
+.content p { margin-bottom: 1em; }
 
 .nav-section {
     margin-top: 40px;
     padding-top: 20px;
-    border-top-width: 1px;
-    border-top-style: solid;
+    border-top: 1px solid;
 }
 
 .nav-label {
@@ -72,14 +53,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 20px;
-}
-
-.seq-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
 }
 
 .btn {
@@ -87,15 +60,15 @@ body {
     padding: 8px 18px;
     border-radius: 4px;
     text-decoration: none;
-    border-width: 1px;
-    border-style: solid;
+    border: 1px solid;
+    font-size: 1em;
+    font-family: inherit;
     cursor: pointer;
-}
-
-.btn-goto {
     font-weight: bold;
 }
 
-.btn-next-seq {
+.btn-home {
+    font-weight: normal;
+    font-size: 0.9em;
     margin-left: auto;
 }
