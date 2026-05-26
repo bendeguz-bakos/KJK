@@ -4,160 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>289. fejezet – A Tűzhegy Varázslója</title>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: 'Georgia', serif;
-  background: #1a1208;
-  color: #e8d9b0;
-  min-height: 100vh;
-  padding: 0;
-}
-.page-wrap {
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 32px 24px 60px;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 2px solid #8b6914;
-  padding-bottom: 14px;
-  margin-bottom: 28px;
-  gap: 12px;
-}
-.header-title {
-  font-size: 0.85em;
-  color: #b89a3e;
-  letter-spacing: 0.05em;
-  font-style: italic;
-  flex: 1;
-  text-align: center;
-}
-.section-badge {
-  background: #8b6914;
-  color: #1a1208;
-  font-weight: bold;
-  font-size: 1.4em;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.content {
-  line-height: 1.85;
-  font-size: 1.06em;
-  text-align: justify;
-  white-space: pre-wrap;
-}
-.content p { margin-bottom: 1em; }
-.nav-section {
-  margin-top: 40px;
-  border-top: 1px solid #5a4010;
-  padding-top: 24px;
-}
-.nav-label {
-  font-size: 0.8em;
-  color: #8b7040;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 14px;
-}
-.nav-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.btn {
-  display: inline-block;
-  padding: 9px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-family: Georgia, serif;
-  font-size: 0.95em;
-  cursor: pointer;
-  border: none;
-  transition: background 0.15s, transform 0.1s;
-}
-.btn:hover { transform: translateY(-1px); }
-.btn-goto {
-  background: #8b6914;
-  color: #1a1208;
-  font-weight: bold;
-}
-.btn-goto:hover { background: #b89a3e; }
-.btn-prev {
-  background: #2e2008;
-  color: #b89a3e;
-  border: 1px solid #5a4010;
-}
-.btn-prev:hover { background: #3e3010; }
-.btn-next {
-  background: #2e2008;
-  color: #b89a3e;
-  border: 1px solid #5a4010;
-}
-.btn-next:hover { background: #3e3010; }
-.btn-home {
-  background: #1e1810;
-  color: #8b7040;
-  border: 1px solid #3a2e10;
-  font-size: 0.85em;
-}
-.btn-home:hover { background: #2a2010; }
-.seq-nav {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.divider {
-  height: 1px;
-  background: #3a2a08;
-  margin: 20px 0;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="page-wrap">
   <div class="header">
     <div class="section-badge">289</div>
-    <div class="header-title">A Tűzhegy Varázslója</div>
-    <a class="btn btn-home" href="index.html" style="text-decoration:none">⌂</a>
+    <span class="header-title">289. fejezet</span>
+    <a class="btn btn-home" href="index.html">⌂</a>
   </div>
   <div class="content">
-<p>Őrjöngve nézel körül a szobában, de semmit sem<br>
-látsz, ami a segítségedre lehetne. Tekinteted hirtelen<br>
-megállapodik egy csomag kártyán, amivel az Öreg<br>
-akkor játszadozott, amikor beléptél. Eszedbe jutnak<br>
-azok a szóbeszédek és történetek, melyeket a falusiak meséltek neked! A Varázsló ereje, a kártyáiban<br>
-rejlik. A Varázsló is észreveszi érdeklődésed a pakli<br>
-kártya iránt, és mindketten az asztal felé rohantok. Te<br>
-érsz oda előbb. - Hagyd békén azokat! - sikoltja - vagy<br>
-kivívod magad ellen legsötétebb haragomat! - Te hátralépsz, és lámpásod lángjával meggyújtod az egyik<br>
-lapot. A Varázsló vadul felkiált, és elkezd könyörögni,<br>
-hogy ne nyúlj a kártyákhoz. Az egyik lapot a másik<br>
-után gyújtod meg, miközben a Varázsló alakja fogyni<br>
-kezd. Amint az utolsó kártya is elhamvadt, egy megtört ember áll előtted. - A könyvem! - hörgi, miközben</p>
-<p>megpróbálja a szemközti falban lévő ajtót kinyitni.<br>
-Karddal a kezedben odarohansz, és rátámadsz. Küzdj<br>
-meg vele!<br>
-Varázsló</p>
+<p>Őrjöngve nézel körül a szobában, de semmit sem<br>látsz, ami a segítségedre lehetne. Tekinteted hirtelen<br>megállapodik egy csomag kártyán, amivel az Öreg<br>akkor játszadozott, amikor beléptél. Eszedbe jutnak<br>azok a szóbeszédek és történetek, melyeket a falusiak meséltek neked! A Varázsló ereje, a kártyáiban<br>rejlik. A Varázsló is észreveszi érdeklődésed a pakli<br>kártya iránt, és mindketten az asztal felé rohantok. Te<br>érsz oda előbb. - Hagyd békén azokat! - sikoltja - vagy<br>kivívod magad ellen legsötétebb haragomat! - Te hátralépsz, és lámpásod lángjával meggyújtod az egyik<br>lapot. A Varázsló vadul felkiált, és elkezd könyörögni,<br>hogy ne nyúlj a kártyákhoz. Az egyik lapot a másik<br>után gyújtod meg, miközben a Varázsló alakja fogyni<br>kezd. Amint az utolsó kártya is elhamvadt, egy megtört ember áll előtted. - A könyvem! - hörgi, miközben</p>
+<p>megpróbálja a szemközti falban lévő ajtót kinyitni.<br>Karddal a kezedben odarohansz, és rátámadsz. Küzdj<br>meg vele!<br>Varázsló</p>
 <p>ÜGYESSÉG 7</p>
 <p>ÉLETERŐ 12</p>
 <p>Ha győztél, lapozz a 396-ra.</p>
   </div>
   <div class="nav-section">
-
-<div class="seq-nav">
-<a class="btn btn-home" href="index.html">⌂ Főoldal</a>
-<a class="btn btn-prev" href="288.html">◀ 288.</a>
-<a class="btn btn-next" href="290.html">290. ▶</a>
-</div>
+    
+    <div class="seq-nav">
+      <a class="btn btn-home" href="index.html">⌂</a>
+      <a class="btn btn-prev" href="288.html">◀ Vissza</a>
+      <a class="btn btn-next-seq" href="290.html">Következő ▶</a>
+    </div>
   </div>
 </div>
 </body>
