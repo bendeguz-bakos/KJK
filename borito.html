@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tűzhegy Varázslója - Fehér Kinyíló Animáció</title>
+    <link rel="stylesheet" href="borito_style.css">
+</head>
+<body>
+
+    <div class="hatter-kep" id="borito">
+        
+        <a href="test.html" class="tuzes-gomb" id="gombom">Belépés a Tűzhegybe</a>
+
+    </div>
+
+    <script>
+        const gomb = document.getElementById('gombom');
+        const borito = document.getElementById('borito');
+
+        gomb.addEventListener('click', function(esemeny) {
+            esemeny.preventDefault();
+            const celGombLink = this.getAttribute('href');
+
+            gomb.classList.add('gomb-eltunik');
+            borito.classList.add('konyv-nyilik');
+
+            setTimeout(function() {
+                window.location.href = celGombLink;
+            }, 1500); 
+        });
+    </script>
+
+</body>
+</html>
